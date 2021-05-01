@@ -1,0 +1,47 @@
+{
+    "resourceName": "lex4b4f82ec",
+    "botName": "autobot",
+    "intents": [
+        {
+            "cancelMessage": "Thank you. Have a nice day!",
+            "confirmationQuestion": "Thank you {firstName}, let me look up your account.",
+            "slots": [
+                {
+                    "name": "firstName",
+                    "type": "AMAZON.US_FIRST_NAME",
+                    "prompt": "May I please have your fist name?",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "I would like to schedule service for my car",
+                "I would like to make an appointment for service"
+            ],
+            "intentName": "ScheduleService",
+            "newSlotTypes": []
+        },
+        {
+            "slots": [
+                {
+                    "name": "n",
+                    "type": "AMAZON.Color",
+                    "prompt": "What color?",
+                    "required": false,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "What services do you provide?",
+                "Do you perform oil changes?",
+                "Do you perform tire rotation?",
+                "Do you provide routine maintenance?"
+            ],
+            "intentName": "ListServices",
+            "newSlotTypes": []
+        }
+    ],
+    "outputVoice": false,
+    "sessionTimeout": 5,
+    "coppa": false
+}
